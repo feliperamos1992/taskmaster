@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  db:
+    image: docker.io/library/postgres:latest
+    environment:
+      POSTGRES_USER: taskmaster
+      POSTGRES_PASSWORD: taskmaster
+      POSTGRES_DB: taskmaster
+    ports:
+      - "5432:5432"
